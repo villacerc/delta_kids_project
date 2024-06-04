@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: delta_kids_project_production
-  username: delta_kids_project
+  username: postgres
   password: <%= ENV['DELTA_KIDS_PROJECT_DATABASE_PASSWORD'] %>
