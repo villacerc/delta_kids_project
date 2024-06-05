@@ -5,8 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.7.1'
+ruby '3.1.0'
 
+gem 'psych', '< 4.0.0'
+gem 'dotenv-rails'
 gem 'faker', github: 'stympy/faker', branch: 'main'
 gem 'cowsay'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -18,6 +20,7 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
+gem 'sassc', '~> 2.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
